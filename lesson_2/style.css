@@ -1,0 +1,24 @@
+.product-item {
+    border: 1px solid black;
+    max-width: 360px;
+    padding: 44px 32px;
+}
+
+.top {
+    background-color: beige;
+    min-height: 75px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.btn-cart {
+    min-width: 85px;
+    min-height: 30px;
+    border-radius: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
