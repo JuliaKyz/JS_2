@@ -20,6 +20,8 @@
                         <i class="fas fa-search"></i>
                     </button>
                 </form> -->
+                <search></search>
+
                 <button class="btn-cart" type="button" @click="showCart = !showCart">Basket</button>
                 <div class="cart-block invisible" v-show="showCart">
                     <p v-if="!cartItems.length">Cart is empty</p>
@@ -54,6 +56,7 @@
         </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/search_component.js"></script>
     <script src="js/main.js"></script>
 
 </body>
