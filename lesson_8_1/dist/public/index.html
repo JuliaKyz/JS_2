@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Интернет-магазин</title>
+    <link rel="shortcut icon" href="/1c5ebd4e2b417e6690da.png" type="image/x-icon" />
+  <script defer src="/js/main.js"></script></head>
+  <body>
+    <div id="app">
+      <!-- Не смог избавиться от этого блока без потери в качестве... Почему-то <cart ref="cart"></cart> в компоненте HeaderComp.js реактивно могла только удалять товары из корзины, а добавляла новые товары в корзину только после перезагрузки страницы. А в варианте представленном ниже работает все нормально... В чем проблема, могли бы подсказать???-->
+      <header class="">
+        <div class="logo">E-shop</div>
+        <div class="cart">
+          <cart ref="cart"></cart>
+        </div>
+      </header>
+      <!-- -->
+
+      <header-el ref="header"></header-el>
+      <main>
+        <error ref="error"></error>
+        <breadcrumbs-el></breadcrumbs-el>
+        <category-el></category-el>
+        <products ref="products"></products>
+      </main>
+      <services-el></services-el>
+      <subscribe-el></subscribe-el>
+      <footer-el></footer-el>
+    </div>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </body>
+</html>
